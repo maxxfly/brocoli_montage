@@ -1,0 +1,9 @@
+ExpiresActive On
+
+ExpiresByType image/jpeg "access plus 50 hours"
+ExpiresByType image/png  "access plus 50 hours"
+
+RewriteEngine on
+
+Options +FollowSymLinks
+RewriteRule images/(.*)? http://drs-static-01.ig-1.net/r/$1 [P,L] 

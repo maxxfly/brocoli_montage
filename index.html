@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<style>
+
+</style>
+<link rel="stylesheet" type="text/css" href="css/canvas.css"></link>
+<script src="jquery-1.5.2.min.js"></script>
+<script src="js/canvas.js"></script>
+</head>
+
+<body>
+
+
+<h1><img src="ico/panda.gif" valign="middle"/> Brocoli montage</h1>
+
+<div id="pool_image">
+  <img src="img/1.jpg"  height="100" data-idproduct="5" />
+  <img src="img/2.jpg"  height="100" data-idproduct="5" />
+  <img src="img/3.jpg"  height="100" data-idproduct="7" />
+  <img src="img/4.jpg"  height="100" data-idproduct="12" />
+  <img src="img/5.jpg"  height="100" data-idproduct="150" />
+  <img src="img/6.jpg"  height="100" data-idproduct="300" />
+  <img src="img/7.jpg"  height="100" data-idproduct="312" />
+  <img src="img/8.jpg"  height="100" data-idproduct="215" />
+  <img src="img/9.jpg"  height="100" data-idproduct="950" />
+  <img src="img/10.jpg"  height="100" data-idproduct="5000" />
+  <img src="img/11.jpg" height="100" data-idproduct="5020" />
+  <img src="img/12.jpg" height="100" data-idproduct="6000" />
+  <img src="img/13.jpg" height="100" data-idproduct="6001" />
+  <img src="img/14.jpg" height="100" data-idproduct="6005" />
+  <img src="img/15.jpg" height="100" data-idproduct="6541" />
+  <img src="img/16.jpg" height="100" data-idproduct="7500" />
+  <img src="img/17.jpg" height="100" data-idproduct="9844" />
+</div>
+
+<div id="interface">
+  <div id="menu">
+    <form>
+      <button id="btn_max_zindex" type="button" onclick="max_zindex();">Passer au premier plan</button>
+      <button id="btn_lower_zindex" type="button" onclick="lower_zindex();">Passer au plan inferieur</button>
+      <button id="btn_magic_detour" type="button" onclick="magic_detour();">Detourer</button>
+      <button id="btn_delete_all" type="button" onclick="delete_all();">Effacer tout</button>
+    </form>
+  </div>
+
+  <div id="dashboard"></div>
+
+  <button onclick="save();">SAVE</button>
+  <textarea cols="80" rows="4" id="output"></textarea>
+</div>
+
+</body>
+
+<script>
+//  img_update("img/3.jpg", 12, 2, 200, 50, 200, 0);
+//  img_update("img/4.jpg", 150, 6, 100, 100, 100, 0);
+
+  // pour une image semi transparente, mettre l'extension PNG pour demander au serveur de detourer et le dernier parametre a 1
+  // img_update("img/4.png", 150, 2, 100, 100, 300, 1);
+</script>
+
+</html>
